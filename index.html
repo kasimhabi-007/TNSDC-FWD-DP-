@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Calendar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calendar-container">
+    <div class="header">
+      <button id="prev">&#9665;</button>
+      <h2 id="month-year"></h2>
+      <button id="next">&#9655;</button>
+    </div>
+    <div class="days">
+      <div>Sun</div>
+      <div>Mon</div>
+      <div>Tue</div>
+      <div>Wed</div>
+      <div>Thu</div>
+      <div>Fri</div>
+      <div>Sat</div>
+    </div>
+    <div id="dates" class="dates"></div>
+  </div>
+
+  <div class="event-box" id="event-box">
+    <h3 id="event-date"></h3>
+    <ul id="event-list"></ul>
+    <button onclick="closeEvents()">Close</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
